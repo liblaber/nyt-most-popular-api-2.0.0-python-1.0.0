@@ -1,0 +1,179 @@
+{
+  "liblabVersion": "2.1.18",
+  "date": "2024-07-08T17:51:33.334Z",
+  "config": {
+    "apiId": 903,
+    "sdkName": "nyt-most-popular",
+    "sdkVersion": "1.0.0",
+    "liblabVersion": "2",
+    "deliveryMethods": ["zip"],
+    "languages": ["python"],
+    "apiVersion": "1.0.0",
+    "apiName": "nyt-most-popular-api",
+    "specFilePath": "spec.yaml",
+    "languageOptions": {
+      "python": {
+        "alwaysInitializeOptionals": false,
+        "additionalConstructorParameters": [
+          {
+            "name": "api_key"
+          }
+        ],
+        "pypiPackageName": "nyt-most-popular",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "typescript": {
+        "bundle": false,
+        "exportClassDefault": false,
+        "httpClient": "axios",
+        "npmName": "nyt-most-popular",
+        "npmOrg": "",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      }
+    },
+    "publishing": {
+      "githubOrg": ""
+    },
+    "devContainer": true,
+    "generateEnv": true,
+    "includeOptionalSnippetParameters": true,
+    "inferServiceNames": false,
+    "injectedModels": [],
+    "license": {
+      "type": "MIT",
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT",
+      "path": "MIT.ejs"
+    },
+    "responseHeaders": false,
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150,
+      "maxDelay": 5000,
+      "retryDelayJitter": 50,
+      "backOffFactor": 2,
+      "httpCodesToRetry": [408, 429, 500, 502, 503, 504],
+      "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
+    },
+    "multiTenant": true,
+    "hooksLocation": {
+      "bucketKey": "6088/hooks.zip",
+      "bucketName": "prod-liblab-api-stack-hooks"
+    },
+    "specUrl": "https://prod-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/903/open-api-spec.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA5P3QKKDKGVNIJ2H7%2F20240708%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240708T175128Z&X-Amz-Expires=43200&X-Amz-Signature=c3bc2509200689823d6f53fcc5c71577f2b47cc37a7e26cd26aaf96591a96f47&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "includeWatermark": false,
+    "alwaysInitializeOptionals": false,
+    "additionalConstructorParameters": [
+      {
+        "name": "api_key"
+      }
+    ],
+    "pypiPackageName": "nyt-most-popular",
+    "githubRepoName": "",
+    "ignoreFiles": [],
+    "language": "python",
+    "deliveryMethod": "zip",
+    "hooks": {
+      "enabled": true,
+      "sourceDir": "/tmp/resources/hooks"
+    },
+    "usesFormData": false,
+    "authentication": {},
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.6.8"
+      },
+      "languages": ["typescript"]
+    },
+    "auth": [],
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    }
+  },
+  "files": [
+    "src/nyt_most_popular/models/base.py",
+    "src/nyt_most_popular/models/utils/json_map.py",
+    "src/nyt_most_popular/models/__init__.py",
+    "src/nyt_most_popular/services/__init__.py",
+    "src/nyt_most_popular/__init__.py",
+    "src/nyt_most_popular/net/__init__.py",
+    "src/nyt_most_popular/net/headers/__init__.py",
+    "src/nyt_most_popular/net/transport/__init__.py",
+    "src/nyt_most_popular/hooks/__init__.py",
+    "src/nyt_most_popular/net/environment/__init__.py",
+    "src/nyt_most_popular/net/request_chain/__init__.py",
+    "src/nyt_most_popular/net/request_chain/handlers/__init__.py",
+    "src/nyt_most_popular/net/transport/request.py",
+    "src/nyt_most_popular/net/transport/response.py",
+    "src/nyt_most_popular/net/transport/request_error.py",
+    "src/nyt_most_popular/sdk.py",
+    "src/nyt_most_popular/net/transport/serializer.py",
+    "src/nyt_most_popular/services/utils/validator.py",
+    "src/nyt_most_popular/services/utils/base_service.py",
+    "pyproject.toml",
+    ".gitignore",
+    "src/nyt_most_popular/models/utils/cast_models.py",
+    "src/nyt_most_popular/net/transport/utils.py",
+    "src/nyt_most_popular/hooks/hook.py",
+    "install.sh",
+    "install.cmd",
+    "examples/install.sh",
+    "examples/install.cmd",
+    "src/nyt_most_popular/net/headers/base_header.py",
+    "src/nyt_most_popular/net/environment/environment.py",
+    "src/nyt_most_popular/net/request_chain/request_chain.py",
+    "src/nyt_most_popular/net/request_chain/handlers/base_handler.py",
+    "src/nyt_most_popular/net/request_chain/handlers/http_handler.py",
+    "src/nyt_most_popular/net/request_chain/handlers/hook_handler.py",
+    "src/nyt_most_popular/net/request_chain/handlers/retry_handler.py",
+    "examples/sample.py",
+    ".env.example",
+    "/examples/.env.example",
+    "src/nyt_most_popular/services/utils/default_headers.py",
+    "./LICENSE",
+    ".devcontainer/devcontainer.json",
+    "documentation/models/GetEmailedPeriodJsonOkResponse.md",
+    "documentation/models/GetEmailedPeriodJsonPeriod.md",
+    "documentation/models/GetSharedPeriodJsonOkResponse.md",
+    "documentation/models/GetSharedPeriodJsonPeriod.md",
+    "documentation/models/GetSharedByPeriodShareTypeJsonOkResponse.md",
+    "documentation/models/GetSharedByPeriodShareTypeJsonPeriod.md",
+    "documentation/models/ShareType.md",
+    "documentation/models/GetViewedPeriodJsonOkResponse.md",
+    "documentation/models/GetViewedPeriodJsonPeriod.md",
+    "documentation/models/EmailedArticle.md",
+    "documentation/models/Media.md",
+    "documentation/models/MediaMetadata.md",
+    "documentation/models/SharedArticle.md",
+    "documentation/models/ViewedArticle.md",
+    "src/nyt_most_popular/models/get_emailed_period_json_ok_response.py",
+    "src/nyt_most_popular/models/get_emailed_period_json_period.py",
+    "src/nyt_most_popular/models/get_shared_period_json_ok_response.py",
+    "src/nyt_most_popular/models/get_shared_period_json_period.py",
+    "src/nyt_most_popular/models/get_shared_by_period_share_type_json_ok_response.py",
+    "src/nyt_most_popular/models/get_shared_by_period_share_type_json_period.py",
+    "src/nyt_most_popular/models/share_type.py",
+    "src/nyt_most_popular/models/get_viewed_period_json_ok_response.py",
+    "src/nyt_most_popular/models/get_viewed_period_json_period.py",
+    "src/nyt_most_popular/models/emailed_article.py",
+    "src/nyt_most_popular/models/media.py",
+    "src/nyt_most_popular/models/media_metadata.py",
+    "src/nyt_most_popular/models/shared_article.py",
+    "src/nyt_most_popular/models/viewed_article.py",
+    "documentation/services/MostPopularService.md",
+    "src/nyt_most_popular/services/most_popular.py",
+    "README.md"
+  ]
+}
